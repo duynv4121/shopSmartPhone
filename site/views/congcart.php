@@ -1,0 +1,10 @@
+<?php
+    session_start();
+?>
+<?php
+    $id=$_GET['masp'];
+    if(isset($_SESSION['giohang'][$id])){
+        $_SESSION['giohang'][$id]['Amount']++;
+    }
+    header('location:../?act=cartview');
+?>

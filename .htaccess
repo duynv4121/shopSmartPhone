@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^$  site [L]
+RewriteRule ^dang-nhap/$  admin/views/login/index.php [L]
+RewriteRule ^forgot-pass/$  admin/views/login/quenpass.php [L]
+RewriteRule ^doi-pass/$  admin/views/login/doipass.php [L]
+RewriteRule ^dang-ky/$  admin/views/login/register.php [L]
+RewriteRule ^gio-hang/$ site/?act=cartview [L]
